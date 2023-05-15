@@ -6,18 +6,19 @@ public class Main {
     A obj=new B();
     System.out.println(obj.meth());
   }
-}
-class A
+  public static class A
 {
   String meth()
   {
     return "Invoking method from class A";
   }
 }
-class B extends A
+public static class B extends A
 {
 String meth()
   {
     return "Method is overridden in Extendend class B";
   }
 }
+}
+
